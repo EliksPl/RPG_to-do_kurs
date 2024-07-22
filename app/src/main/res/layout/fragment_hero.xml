@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    tools:context=".ui.hero.HeroFragment">
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_exp_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_toolBar" />
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fragment_hero_toolBar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@color/secondary_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="@string/title_hero"
+        app:titleTextColor="@color/main_color" />
+
+    <ImageView
+        android:id="@+id/fragment_hero_tv_stat_level"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+
+
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_lv"
+        android:text="LV: "
+
+        android:textColor="@color/black"
+        android:textSize="56sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_exp_lvlup_bar" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_level_counter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="1"
+
+        android:textColor="@color/black"
+        android:textSize="56sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_level"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_level"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_level" />
+
+
+    <ImageView
+        android:id="@+id/fragment_hero_iv_hero_avatar"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:src="@drawable/ic_hero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_exp_lvlup_bar"
+        android:contentDescription="Hero avatar"
+        tools:ignore="HardcodedText" />
+
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_strength"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hero_stat_strength"
+        android:textColor="@color/black"
+
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_iv_hero_avatar" />
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_strength_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_tv_stat_strength" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_intelligence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hero_stat_intelligence"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_strength_lvlup_bar" />
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_intelligence_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_tv_stat_intelligence" />
+
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_endurance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hero_stat_endurance"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_intelligence_lvlup_bar" />
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_endurance_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_tv_stat_endurance" />
+
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_agility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hero_stat_agility"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_endurance_lvlup_bar" />
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_agility_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_tv_stat_agility" />
+
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_wisdom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hero_stat_wisdom"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+
+        app:layout_constraintEnd_toStartOf="@+id/fragment_hero_iv_hero_avatar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_pb_agility_lvlup_bar" />
+
+    <ProgressBar
+        android:id="@+id/fragment_hero_pb_wisdom_lvlup_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_hero_tv_stat_wisdom"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_strength_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_strength"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_strength"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_strength"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_intelligence_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_intelligence"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_intelligence"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_intelligence"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_endurance_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_endurance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_endurance"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_endurance"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_agility_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_agility"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_agility"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_agility"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/fragment_hero_tv_stat_wisdom_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_wisdom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_wisdom"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_wisdom"
+        tools:ignore="HardcodedText" />
+
+    <ImageButton
+        android:id="@+id/fragment_hero_ib_stat_strength_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_strength_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_strength_counter"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_strength_counter"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/fragment_hero_ib_stat_intelligence_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_intelligence_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_intelligence_counter"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_intelligence_counter"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/fragment_hero_ib_stat_endurance_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_endurance_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_endurance_counter"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_endurance_counter"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/fragment_hero_ib_stat_agility_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_agility_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_agility_counter"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_agility_counter"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/fragment_hero_ib_stat_wisdom_plus_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_hero_tv_stat_wisdom_counter"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toEndOf="@+id/fragment_hero_tv_stat_wisdom_counter"
+        app:layout_constraintTop_toTopOf="@+id/fragment_hero_tv_stat_wisdom_counter"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

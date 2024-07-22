@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    custom colors    -->
+    <color name="red">#C82F2F</color>
+    <color name="green">#32A32A</color>
+    <color name="orange">#DA7F2E</color>
+
+<!--    main colors-->
+    <color name="main_color">#F4D092</color>
+    <color name="secondary_color">#7f3f36</color>
+    <color name="secondary_color_tinted">#6A352D</color>
+    <color name="third_color">#FFC671</color>
+
+<!--    specific colors-->
+    <color name="bottom_nav_bar_background_selected">#EC8E02</color>
+    <color name="rv_task_title_txt_color">@color/black</color>
+    <color name="rv_task_desc_txt_color">@color/black</color>
+    <color name="rv_task_date_txt_color">@color/black</color>
+    <color name="transparent_button_grey_corner">#DC737373</color>
+    <color name="transparent_gray_box">#11000000</color>
+    <color name="hint_color">#DC8F8F8F</color>
+
+</resources>

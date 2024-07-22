@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="256dp"
+    android:background="@color/main_color"
+    android:paddingTop="8dp"
+    tools:context=".ui.tasks.subscreens.extended.ExtendedTaskFragment">
+
+    <ImageView
+        android:id="@+id/fragment_extended_task_stat_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="8dp"
+        android:minWidth="96dp"
+        android:minHeight="96dp"
+        android:src="@drawable/ic_strength"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_extended_task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+
+        android:singleLine="true"
+        android:text="@string/default_task_title"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_extended_task_stat_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fragment_extended_task_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+
+        android:layout_marginEnd="8dp"
+
+        android:minHeight="48dp"
+        android:text="@string/default_task_desc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_tv_date_to" />
+
+    <TextView
+        android:id="@+id/fragment_extended_task_tv_date_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginEnd="8dp"
+        android:singleLine="true"
+        android:text="@string/default_task_date"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_extended_task_stat_image"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_title" />
+
+    <TextView
+        android:id="@+id/fragment_extended_task_tv_exp_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+        android:layout_marginTop="8dp"
+        android:singleLine="true"
+        android:text="10"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/fragment_extended_task_iv_exp_reward"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_description" />
+
+    <ImageView
+        android:id="@+id/fragment_extended_task_iv_exp_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        android:src="@drawable/ic_exp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_description" />
+
+    <TextView
+        android:id="@+id/fragment_extended_task_tv_currency_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="16dp"
+        android:gravity="end"
+        android:singleLine="true"
+
+        android:text="10"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_description" />
+
+    <ImageView
+        android:id="@+id/fragment_extended_task_iv_currency_reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:gravity="end"
+
+
+        android:src="@drawable/icon_coin"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_extended_task_tv_currency_reward"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_description" />
+
+    <ImageButton
+        android:id="@+id/fragment_extended_task_btn_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/red"
+
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+
+        android:src="@drawable/ic_delete_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_extended_task_gl_vert1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_tv_exp_reward" />
+
+    <ImageButton
+        android:id="@+id/fragment_extended_task_btn_complete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        android:minWidth="48dp"
+
+        android:minHeight="48dp"
+
+        android:src="@drawable/ic_done_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_extended_task_gl_vert2"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_tv_exp_reward" />
+
+    <ImageButton
+        android:id="@+id/fragment_extended_task_btn_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:background="@color/orange"
+        android:minWidth="48dp"
+
+        android:minHeight="48dp"
+        android:src="@drawable/ic_edit_48"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_extended_task_btn_complete"
+        app:layout_constraintStart_toEndOf="@+id/fragment_extended_task_btn_delete"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_extended_task_tv_exp_reward" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_extended_task_gl_vert1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/fragment_extended_task_gl_vert2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

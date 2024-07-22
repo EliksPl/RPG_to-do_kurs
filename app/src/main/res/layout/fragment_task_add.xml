@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottomsheet_shape"
+    android:paddingTop="16dp"
+    android:layout_gravity="bottom"
+    tools:context=".ui.tasks.subscreens.add.TaskAddFragment">
+
+    <ImageView
+        android:id="@+id/add_task_fragment_stat_iv"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:src="@drawable/ic_strength"
+        app:layout_constraintBottom_toTopOf="@+id/AddTaskFragmentEtDesc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/AddTaskFragmentEtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_transparent_black_text_box_shape"
+        android:gravity="start"
+        android:hint="@string/add_task_title_hint"
+        android:minHeight="48dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/add_task_fragment_stat_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/add_task_fragment_stat_iv" />
+
+    <EditText
+        android:id="@+id/AddTaskFragmentEtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="96dp"
+        android:padding="8dp"
+
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_transparent_black_text_box_shape"
+        android:gravity="start"
+        android:hint="@string/add_task_et_desc_hint"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:maxLines="2"
+
+        app:layout_constraintBottom_toTopOf="@+id/fragment_add_task_tv_difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/fragment_add_task_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="@string/add_task_btn_cancel_text"
+        android:textColor="@color/transparent_button_grey_corner"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/fragment_add_task_done_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="@string/add_task_btn_done_text"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:id="@+id/fragment_add_task_btn_set_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:layout_marginBottom="8dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="@string/default_task_date_button_text"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/AddTaskFragmentEtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/add_task_fragment_stat_iv" />
+
+    <ImageButton
+        android:id="@+id/fragment_add_task_btn_clear_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/secondary_color"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_cross_24"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_add_task_tv_difficulty"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/fragment_add_task_btn_set_date" />
+
+
+    <ImageButton
+        android:id="@+id/fragment_add_task_btn_higher_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_right"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_add_task_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/fragment_add_task_btn_lower_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_add_task_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/fragment_add_task_tv_difficulty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+
+        android:text="@string/default_task_difficulty"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/fragment_add_task_back_btn"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_add_task_btn_higher_difficulty"
+        app:layout_constraintStart_toEndOf="@+id/fragment_add_task_btn_lower_difficulty" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

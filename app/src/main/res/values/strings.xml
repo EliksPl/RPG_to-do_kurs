@@ -1,0 +1,64 @@
+<resources>
+<!--    main strings-->
+
+    <string name="app_name">RPG_to-do</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="title_hero">Hero</string>
+    <string name="title_admin">Admin</string>
+
+<!--specific strings-->
+    <!--All screens    -->
+    <string name="admin_mode_required">Admin rights required</string>
+
+    <!--Tasks    -->
+    <string name="default_task_difficulty">Easy</string>
+    <string-array name="task_difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+        <!--RecyclerView        -->
+    <string name="rv_task_item_default_title">Title</string>
+    <string name="rv_task_item_default_desc">Description</string>
+
+        <!--Add task fragment    -->
+    <string name="add_task_title_hint">Enter tasks title</string>
+    <string name="add_task_et_desc_hint">Enter tasks description</string>
+    <string name="default_task_date_tv_label">Deadline</string>
+    <string name="default_task_date_button_text">Set deadline</string>
+    <string name="add_task_btn_cancel_text">Cancel</string>
+    <string name="add_task_btn_done_text">Done</string>
+
+        <!--Extended task fragment        -->
+    <string name="default_task_title">Title</string>
+    <string name="default_task_desc">Description</string>
+    <string name="default_task_date">Date</string>
+
+        <!--Date time picker fragment    -->
+    <string name="date_time_picker_dialog_select_button">Select</string>
+    <string name="date_time_picker_dialog_cancel_button">Cancel</string>
+    <string name="timePicker_dialogue_title">Choose date</string>
+
+
+
+
+    <!--Hero    -->
+        <!--Stats    -->
+    <string name="hero_stat_strength">Strength</string>
+    <string name="hero_stat_intelligence">Intelligence</string>
+    <string name="hero_stat_endurance">Endurance</string>
+    <string name="hero_stat_agility">Agility</string>
+    <string name="hero_stat_wisdom">Wisdom</string>
+    <string name="hero_stat_speed">Speed</string>
+
+    <!--Admin    -->
+        <!--Buttons    -->
+    <string name="admin_password_set">Set password</string>
+    <string name="admin_password_reset">Reset password</string>
+    <string name="admin_btn_toggle_turned_on">Exit admin mode</string>
+    <string name="admin_btn_toggle_turned_off">Enter admin mode</string>
+        <!--Hint    -->
+    <string name="admin_et_password_hint">Enter password</string>
+
+</resources>

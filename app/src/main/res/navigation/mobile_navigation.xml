@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_tasks">
+
+    <fragment
+        android:id="@+id/navigation_tasks"
+        android:name="vnt.dip.rpg_to_do_kurs.ui.tasks.TasksFragment"
+        android:label="@string/title_tasks"
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_navigation_tasks_to_extendedTaskFragment"
+            app:destination="@id/extendedTaskFragment" />
+        <action
+            android:id="@+id/action_navigation_tasks_to_taskAddFragment"
+            app:destination="@id/taskAddFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_hero"
+        android:name="vnt.dip.rpg_to_do_kurs.ui.hero.HeroFragment"
+        android:label="@string/title_hero"
+        tools:layout="@layout/fragment_hero" />
+
+    <fragment
+        android:id="@+id/navigation_admin"
+        android:name="vnt.dip.rpg_to_do_kurs.ui.admin.AdminFragment"
+        android:label="@string/title_admin"
+        tools:layout="@layout/fragment_admin" />
+    <fragment
+        android:id="@+id/taskAddFragment"
+        android:name="vnt.dip.rpg_to_do_kurs.ui.tasks.subscreens.add.TaskAddFragment"
+        android:label="fragment_task_add"
+        tools:layout="@layout/fragment_task_add" >
+        <action
+            android:id="@+id/action_taskAddFragment_to_navigation_tasks"
+            app:destination="@id/navigation_tasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/extendedTaskFragment"
+        android:name="vnt.dip.rpg_to_do_kurs.ui.tasks.subscreens.extended.ExtendedTaskFragment"
+        android:label="fragment_extended_task"
+        tools:layout="@layout/fragment_extended_task" >
+        <action
+            android:id="@+id/action_extendedTaskFragment_to_navigation_tasks"
+            app:destination="@id/navigation_tasks" />
+        <action
+            android:id="@+id/action_extendedTaskFragment_to_taskAddFragment"
+            app:destination="@id/taskAddFragment" />
+    </fragment>
+</navigation>
